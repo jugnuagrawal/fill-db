@@ -1,0 +1,31 @@
+{
+  "name": "fill-db",
+  "version": "0.0.1",
+  "description": "A library to fill dummy data in mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jugnuagrawal/fill-db.git"
+  },
+  "keywords": [
+    "fill",
+    "fake",
+    "dummy",
+    "data",
+    "mongo",
+    "filler"
+  ],
+  "author": "Jugnu Agrawal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jugnuagrawal/fill-db/issues"
+  },
+  "homepage": "https://github.com/jugnuagrawal/fill-db#readme",
+  "dependencies": {
+    "faker": "^4.1.0",
+    "mongodb": "^3.0.2"
+  }
+}
