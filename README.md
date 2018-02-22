@@ -23,7 +23,7 @@ var options = {
     count:25 //Optional, default: 10
 }
 
-filldb.fill(options)
+filldb.db(options)
 
 ```
 

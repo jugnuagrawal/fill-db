@@ -140,6 +140,5 @@ function _api(options) {
 }
 
 module.exports = {
-    db: _db,
-    api: _api
+    db: _db
 }
