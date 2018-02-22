@@ -96,26 +96,26 @@ function _db(options) {
 //     }
 // });
 
-_api({
-    host: 'localhost',
-    port: 3000,
-    path: '/user',
-    schema: {
-        "name": "String",
-        "email": "String",
-        "password": "String",
-        "contact": 9538005852,
-        "address": [
-            {
-                "streetOne": "String",
-                "streetTwo": "String",
-                "city": "String",
-                "state": "String",
-                "pincode": 560100
-            }
-        ]
-    }
-})
+// _api({
+//     host: 'localhost',
+//     port: 3000,
+//     path: '/user',
+//     schema: {
+//         "name": "String",
+//         "email": "String",
+//         "password": "String",
+//         "contact": 9538005852,
+//         "address": [
+//             {
+//                 "streetOne": "String",
+//                 "streetTwo": "String",
+//                 "city": "String",
+//                 "state": "String",
+//                 "pincode": 560100
+//             }
+//         ]
+//     }
+// })
 
 function _api(options) {
     var count = options.count && options.count > 0 ? options.count : 10;
