@@ -119,26 +119,27 @@ function _db(options) {
 
 function _api(options) {
     var count = options.count && options.count > 0 ? options.count : 10;
-    var req = http.request({
-        host: options.host || 'localhost',
-        port: options.port || 3000,
-        path: options.path,
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    }, function (res) {
-        res.on('data', (chunk) => {
-            console.log(`BODY: ${chunk}`);
-        });
-    });
     for (var i = 0; i < count; i++) {
+        var req = http.request({
+            host: options.host || 'localhost',
+            port: options.port || 3000,
+            path: options.path,
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }, function (res) {
+            res.on('data', (chunk) => {
+                console.log(`BODY: ${chunk}`);
+                console.log('');
+            });
+        });
         var temp = _parseSchema(options.schema);
-        req.write(JSON.stringify(temp));
+        req.end(JSON.stringify(temp), 'utf-8');
     }
-    req.end();
 }
 
 module.exports = {
-    db: _db
+    db: _db,
+    api:_api
 }
