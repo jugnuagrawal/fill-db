@@ -1,6 +1,6 @@
 # fill-db
 
-For those who are tired of filling db with fake values just to check API
+Fill db is a library to fill fake values into mongodb using faker.js.
 
 ## How to use
 
@@ -29,7 +29,7 @@ var options = {
 filldb.db(options)
 
 ```
-### Fill database using API
+### Fill database using your application API
 
 ```javascript
 const filldb = require('fill-db');

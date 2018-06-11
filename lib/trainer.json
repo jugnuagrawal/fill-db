@@ -1,0 +1,18 @@
+[
+    {
+        "text":"first name",
+        "label":"name.firstName"
+    },
+    {
+        "text":"f name",
+        "label":"name.firstName"
+    },
+    {
+        "text":"fname",
+        "label":"name.firstName"
+    },
+    {
+        "text":"firstname",
+        "label":"name.firstName"
+    }
+]
